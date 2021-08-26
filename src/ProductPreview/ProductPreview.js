@@ -9,15 +9,16 @@ const ProductPreview = (props) => {
     <div className={classes.ProductPreview}>
       <img src={props.currentPreviewImage} alt="Product Preview" />
           {
-            props.HeartBeatsSection ? 
+            // props.showHeartBeatSection ? 
+            props.currentSelectedFeature === 1 ?
               <div className={[classes.FeatureData, classes.HeartBeatsSection].join(' ')}>
-                <i class="fas fa-heartbeat"></i>
+                <i className="fas fa-heartbeat" />
                 <p>78</p>
               </div>
             :
               <div className={[classes.FeatureData, classes.TimeSection].join(' ')}>
                 <p>{`${currentHours}:${currentMinutes}`}</p>
-              </div>
+              </div> 
           }
     </div>
   );
