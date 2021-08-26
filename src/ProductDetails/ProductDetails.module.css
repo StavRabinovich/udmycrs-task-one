@@ -39,29 +39,32 @@
 }
 
 .FeatureItem{
-  min-width: 75px;
-  background-color: rgb(180, 211, 253);
-  border-radius: 8px;
-  border: 0;
-  padding: 12px 24px;
-  text-align: center;
-  margin-right: 10px;
-  cursor: pointer;
-  font-weight: 600;
   box-sizing: content-box;
+  min-width: 75px;
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;  
+  text-align: center;
+
+  font-weight: 600;
+  background-color: rgba(236, 232, 232, 0.815);
 }
 
 .SelectedFeatureItem{
   color: white;
-  background-color: gray;
+  background-color: rgb(165, 163, 163);
 }
 
 .PrimaryButton{
-  color: white;
-  background-color: teal;
-  font-size: 20px;
-  border-radius: 8px;
-  border: 0;
-  padding: 12px 24px;
   margin-top: 32px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: rgba(0, 0, 0, 0.863);
+  background-color: rgb(180, 211, 253);
 }

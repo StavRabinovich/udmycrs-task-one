@@ -15,11 +15,6 @@ const ProductDetails = (props) => {
 
   const featureList = props.data.featureList.map((item, pos)=> {
     const classArr = [classes.FeatureItem];
-    /*if (pos === 1 && props.showHeartBeatSection){
-      classArr.push(classes.SelectedFeatureItem);
-    } else if (pos===0 && !props.showHeartBeatSection){
-      classArr.push(classes.SelectedFeatureItem);
-    }*/
 
     if (pos === props.currentSelectedFeature){
       classArr.push(classes.SelectedFeatureItem);

@@ -9,7 +9,6 @@ const ProductPreview = (props) => {
     <div className={classes.ProductPreview}>
       <img src={props.currentPreviewImage} alt="Product Preview" />
           {
-            // props.showHeartBeatSection ? 
             props.currentSelectedFeature === 1 ?
               <div className={[classes.FeatureData, classes.HeartBeatsSection].join(' ')}>
                 <i className="fas fa-heartbeat" />
